@@ -34,7 +34,7 @@ const userSlice = createSlice({
     name:"user",
     initialState:{
         authUser:null,
-        OtherUsers:null,
+        otherUsers:null,
         selectedUser:null,
         onlineUsers:null,
     },
@@ -43,7 +43,7 @@ const userSlice = createSlice({
             state.authUser = action.payload;
         },
         setOtherUsers:(state, action)=>{
-            state.OtherUsers = action.payload;
+            state.otherUsers = action.payload;
         },
         setSelectedUser:(state,action)=>{
             state.selectedUser = action.payload;
